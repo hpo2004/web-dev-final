@@ -1,5 +1,5 @@
 .container {
-    border: 0.5px solid red;
+    /* border: 0.5px solid red; */
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -7,12 +7,13 @@
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .main {
-    border: 0.5px solid green;
+    /* border: 0.5px solid green; */
     display: flex;
     gap: 10px;
 }
@@ -28,10 +29,4 @@
     display: flex;
     flex-wrap: wrap;
     width: 351px;
-}
-
-.docs {
-    position: absolute;
-    bottom: 0;
-    color: red;
 }

@@ -108,9 +108,10 @@ const Board = () => {
             <div className={styles.main}>
                 <AnswerList side={'left'} answers={answersLeft} />
                 <div className={styles.play}>
+                    <h1 style={{ fontSize: "3em" }}>Squrbble</h1>
                     <p className={styles.word}>{selectedCells.map(index => cellLetters[index]).join('')}</p>
                     <button onClick={submitWord}>Submit Word</button>
-                    <h1>Score: {score} Words: {answersLeft.length + answersRight.length} / 12</h1>
+                    <h2>Score: {score} Words: {answersLeft.length + answersRight.length} / 12</h2>
                     <div className={styles.board} id='board'>
                         {cellLetters.map((letter, index) => (
                             <Cell
